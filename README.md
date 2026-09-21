@@ -34,7 +34,7 @@ Musify is a React music discovery interface that combines Spotify search with a 
 Requires Node.js 20 or newer.
 
 ```bash
-git clone https://github.com/<your-username>/<repository-name>.git
+git clone https://github.com/shrivastav05aman/musify
 npm install
 npm run dev
 ```
