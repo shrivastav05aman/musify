@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+}
+
+.navbar{
+    height : 100vh;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgba(5, 239, 5, 0.934);
+    padding-top: 20px;
+}
+
+.navbar h1{
+    margin: 10px 0;
+    font-size: 2.5rem;
+    border-bottom: 6px solid #fff;
+    color: white;
+}
+
+.navbar *:hover{
+    scale: 1.2;
+}
+
+.navbar a{
+    color : #fff;
+    text-decoration: none;
+    font-size : 1.5rem;
+    font-weight: 700;
+    margin : 5px 0;
+    outline : none;
+}   
+
+.navbar a:hover{
+    opacity: .9;
+}
+
+
+.home, .songs, .login, .callback{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 75%;
+    background-color: #000;
+    color : #fff;
+}
+
+.home{
+    background-color : rgb(7, 176, 233);
+}
+
+
+.home a{
+    text-decoration: underline;
+    color: #fff;
+    margin-top: 20px;
+    text-decoration-thickness: 3px;
+    font-size: 1.4rem;
+}
+
+.home h1{
+    font-size: 3rem;
+}
+
+.home p{
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.home a:hover{
+    color: #000;
+    font-weight: bolder;
+}
+
+.songs .search{
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    margin-top: 8px;
+    border: 2px solid #000;
+}
+
+.songs .search:hover{
+    border: 2px solid #fff;
+}
+
+.songs-container{
+    padding : 30px;
+    height: 95vh;
+    width: 90%;
+    border-radius: 2rem;
+    display:flex;
+    flex-direction: column;
+    align-items : space-between;
+    justify-content: center;
+}
+
+.songs-container .search-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar .search-input{
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 2px solid #000;
+    border-radius: 18px;
+    outline: none;
+    width : 80%;
+    border : 2px solid #fff;
+    display : flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.search-input input{
+    width: 75%;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 2px solid #000;
+    border-radius: 18px;
+    outline: none;
+    color : #fff;
+    background-color: transparent;
+}
+
+.search-input input::placeholder{
+    color : #fff;
+}
+
+.search-input select{
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 18px;
+    outline: none;
+    color : #fff;
+    background-color: transparent;
+    display : flex;
+    justify-content : gap-between;
+    width: 25%;
+}
+
+select option{
+    background-color: #000;
+    border : none;
+}
+
+.search{
+    margin-left : 10px;
+}
+
+.songs-data{
+    height: 95%;
+    width: 100%;
+    display: flex;
+    flex-direction : column;
+    overflow-y : scroll;
+}
+
+.songs-data::-webkit-scrollbar {
+    width: 8px;
+}
+
+.songs-data::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.songs-data::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 999px;
+}
+
+.songs-data::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.songs-data{
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.6) transparent;
+}
+
+.song-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #fff;
+    padding : 0 10px;
+    margin : 10px 0;
+    cursor: pointer;
+}
+
+.song-card p{
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.song-card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.song-card div div{
+    display : flex;
+    gap : 10px;
+}
+
+
+
+.play, .get-songs, .get-songs-album{
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    color : #fff;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top : 2px;
+    padding : 5px;
+}
+
+.play{
+    text-decoration: none;
+}
+
+.get-songs-album{
+    margin-top : 0;
+}
+    
+.get-songs, .get-songs-album{
+    padding : 5px 0;
+}
+
+.play:hover, .get-songs:hover, .get-songs-album:hover{
+    box-shadow: 0 0 8px #fff;
+}
+
+.no-image{
+    width : 100px;
+    height : 100px;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+.album-info{
+    display : flex;
+    flex-direction : column;
+    margin : 5px 0;
+}
+
+.song-player{
+    background-color: #000;
+    width : 75%;
+    height : 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.back{
+    width: 50%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.back:hover{
+    font-weight: bold;
+}
+
+
+
+.login h1{
+    font-size: 4rem;
+}
+
+.login button, .callback button{
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 18px;
+    width: 50%;
+    margin: 12px 0;
+    transition: all;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+.login button:hover, .callback button:hover{
+    box-shadow: 0 0 8px #fff;
+}
+
+.callback h1{
+    font-size: 3rem;
+}
+
+.callback p{
+    font-size: 1.5rem;
+}
+
