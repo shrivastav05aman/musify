@@ -101,10 +101,11 @@ Musify/
 
 ## Live Preview
 
-<video controls width="100%">
-    <source src="./src/assets/live-preview.mp4" type="video/mp4">
-    <a href="./src/assets/live-preview.mp4">Download the project demo video</a>
-</video>
+A demo video of Flow Board is included in the project at:
+
+```text
+src/assets/live-preview.mp4
+```
 
 ### Source Organization
 
